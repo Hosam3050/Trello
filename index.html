@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trello</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+
+<body>
+  <section class="container" id="container">
+    <div class="inProgress" ondragover="carry(event)" ondrop="put(event)">
+      <h2 >In Progress</h2>
+      <div class="tasksSection" id="inProgress">
+
+        <p id="1" draggable="true" ondragstart="move(event)"> Html</p>
+        <p id="2" draggable="true" ondragstart="move(event)">css</p>
+        <p id="3" draggable="true" ondragstart="move(event)">js</p>
+        <p id="4" draggable="true" ondragstart="move(event)">c++</p>
+        <p id="5" draggable="true" ondragstart="move(event)">c</p>
+      </div>
+    </div>
+    <div class="onHold" ondragover="carry(event)" ondrop="put(event)">
+      <h2 >On Hold</h2>
+      <div class="tasksSection" id="hold"></div>
+    </div>
+    <div class="review" ondragover="carry(event)" ondrop="put(event)">
+      <h2 >In Review</h2>
+      <div class="tasksSection" id="review"></div>
+    </div>
+    <div class="approved" ondragover="carry(event)" ondrop="put(event)">
+      <h2>Approved</h2>
+      <div class="tasksSection" id="Approved"></div>
+    </div>
+  </section>
+
+</body>
+<script src="main.js"></script>
+</html>
